@@ -1,6 +1,6 @@
 # ![Concepts - Concpets](./assets/tktk-hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to decribe what an API is.
 
 ## Third Party APIs
 

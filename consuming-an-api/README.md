@@ -1,6 +1,6 @@
 # ![[Consuming an API] - Consuming an API](./assets/tktk-hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to make a request to a third-party API using Postman and cURL.
 
 ## Consuming an API
 

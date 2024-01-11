@@ -2,43 +2,33 @@
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module.
+In this module you'll learn how to consume from and API using Postman and cURL.
 
 ## Prerequisites
 
-- tktk
-- tktk
-- tktk
+- HTTP Request Response Cycle
 
 ## Content
 
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
-| [Concepts](./concepts/README.md) | -- | -- | tktk skills covered |
-| [API Keys](./api-keys/README.md) | -- | -- | tktk skills covered |
-| [Consuming an API](./consuming-an-api/README.md) | -- | -- | tktk skills covered |
+| [Concepts](./concepts/README.md) | -- | -- | Describe what an API is. |
+| [API Keys](./api-keys/README.md) | -- | -- | Create an API key and know how to handle it safely. |
+| [Consuming an API](./consuming-an-api/README.md) | -- | -- | Using Postman and cURL make a request to an API |
 | **Total content**                                        | -- | -- |                     |
 
 ## Level Up content
 
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
-| [Saving API Data - Mongoose Model](./level-up/saving-api-data-mongoose.md) | -- | -- | tktk skills covered |
-| [Saving API Data - Django Model](./level-up/saving-api-data-django.md) | -- | -- | tktk skills covered |
-| [Saving API Data - Java Model](./level-up/saving-api-data-java.md) | -- | -- | tktk skills covered |
+| [Saving API Data - Mongoose Model](./level-up/saving-api-data-mongoose.md) | -- | -- | Describe what properties to save to a Mongoose Schema. |
+| [Saving API Data - Django Model](./level-up/saving-api-data-django.md) | -- | -- | Describe what properties to save to a Django Model. |
+| [Saving API Data - Java Model](./level-up/saving-api-data-java.md) | -- | -- | Describe what properties to save to a Java Model. |
 | **Total Level Up content**                                          | -- | -- |                     |
 
 ## References
 
 📖 [Reference Materials](./references/README.md)
-
-## Deployed sites
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](#tktk-deployed-app-url)
-
-🐙 [Repository](#tktk-repository-for-deployed-app)
 
 ## Internal resources
 

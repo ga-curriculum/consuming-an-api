@@ -1,6 +1,6 @@
 # ![[API Keys] - API Keys](./assets/tktk-hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to obtain an API key and know how to handle it safely.
 
 ## API Keys
 
