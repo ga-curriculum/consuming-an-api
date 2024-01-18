@@ -8,7 +8,6 @@ Third-party APIs are created by a company, organization, or individual that is n
 
 We can start exploring the options of third-party APIs by looking in a couple of crucial places first:
 
-- [Programmable Web](https://www.programmableweb.com/)
 - [Rapid API](https://rapidapi.com/)
 - [Awesome APIs](https://github.com/public-apis/public-apis)
 - [Public APIs](https://publicapis.dev/)
