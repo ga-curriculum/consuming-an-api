@@ -10,20 +10,22 @@ They are usually a long string of random characters that the API provider genera
 
 Since API keys are a unique identifier, they should be kept secret. If someone else gets a hold of your API key, they can use it to make requests to the API under your identity. If you are paying for the API, this can result in charges on your account that most companies will hold you responsible for. If you use an API key in your application, you should never commit it to your repository. Instead, you should store it in an environment variable in a file that will be ignored when changes are pushed up to GitHub.
 
-## Obtaining an API Key - OMDB API
+## Obtaining an API Key - OMDb API
 
-For this lesson, we will use the [OMDB API](http://www.omdbapi.com/). This API allows us to search for movies and get information about them. To use this API, we need to get an API key. Let's complete the following steps:
+For this lesson, we will use the [OMDb API](http://www.omdbapi.com/). This API allows us to search for movies and get information about them. To use this API, we need to get an API key.
 
-- Go to the [OMDB API](http://www.omdbapi.com/) website
-- At the top of the page, click on the "API Key" link
+Let's complete the following steps:
+
+- Go to the [OMDb API](http://www.omdbapi.com/) website
+- At the top of the page, click on the "API Key" link in the navbar
 - Select the "FREE!" plan
-- Fill out the form and click "Create Account."
+- Fill out the form and click "Submit"
 
-> 📚 Note the rate limit for the free plan is 1000 requests per day.
+> 📚 Note: the rate limit for the free plan is 1000 requests per day.
 
-Once you have created your account, your API key will be sent to the email you used to sign up. Visit your email and copy the API key.
+Once you have created your account, your API key will be sent to the email you used to sign up. ***Visit your email and copy the API key.***
 
-> You can activate your API key by clicking on a link in the email. Follow all instructions given in the email. As noted, third-party APIs are created by someone else, so changes in how we use the API can happen anytime. When in doubt, always follow the API documentation or instructions.
+> ✅ Be sure to activate your API key by clicking on a link in the email. Follow all instructions given in the email. As noted, third-party APIs are created by someone else, so changes in how we use the API can happen anytime. When in doubt, always follow the API documentation or instructions.
 
 ### Keep it secret, keep it safe
 
