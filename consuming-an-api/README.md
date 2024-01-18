@@ -4,7 +4,11 @@
 
 ## Consuming an API
 
-For this lesson, we will use two tools to consume from the OMDB API. The first is [Postman](https://www.postman.com/). Postman is a tool that allows us to request APIs and see the response. The second is [cURL](https://curl.se/). cURL is a command line tool that will enable us to make requests to APIs from the command line.
+For this lesson, we will use two tools to consume from the OMDB API.
+
+The first is [Postman](https://www.postman.com/). Postman is a tool that allows us to make requests to APIs and see the responses.
+
+The second is [cURL](https://curl.se/). cURL is a command line tool that will enable us to make requests to APIs from the command line.
 
 ## Consume an API using cURL
 
