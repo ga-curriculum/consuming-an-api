@@ -4,7 +4,7 @@
 
 ## Third Party APIs
 
-Third-party APIs are created by a company, organization, or individual that is not you. They are a great way to add functionality to your application without building it yourself. There are APIs for almost anything, from weather to sports, movies, and music. 
+Third-party APIs are created by a company, organization, or individual that is not you. They are a great way to add functionality to your application without building it yourself. There are APIs for almost anything, from weather to sports, movies, music, and more! 
 
 We can start exploring the options of third-party APIs by looking in a couple of crucial places first:
 
@@ -12,7 +12,7 @@ We can start exploring the options of third-party APIs by looking in a couple of
 - [Awesome APIs](https://github.com/public-apis/public-apis)
 - [Public APIs](https://publicapis.dev/)
 
-However, since third-party APIs are created by someone else and these are curated lists, it's always good to do a quick Google search for the type of API you are looking for.
+Keep in mind, since third-party APIs are created by someone else and the above resources are curated lists, it's always good to also do a quick Google search for the type of API you are looking for.
 
 ## API Documentation
 
