@@ -16,17 +16,19 @@ Keep in mind, since third-party APIs are created by someone else and the above r
 
 ## API Documentation
 
-We have found an API we want to use; now, what? The first thing we need to do is read the documentation. API documentation is a set of instructions that tell us how to use the API. It will tell us what endpoints are available, what data we can get from them, and how to make requests to them.
+We have found an API we want to use; **now, what?**
 
-Documentation quality can vary from API to API. Some APIs have excellent documentation that is easy to read and understand. In contrast, others have documentation that is hard to read and understand. It's essential to read the documentation carefully and ensure you know it before consuming from it.
+The first thing we need to do is read its documentation. API documentation is a set of instructions that tell us how to use that specific API. It will tell us important things such as what endpoints are available, what data we can get from them, and how to make requests to them.
 
-A couple of things to look for in the documentation:
+Documentation quality can vary from API to API. Some APIs have excellent documentation that is easy to read and understand. In contrast, others may have documentation that is confusing, unclear, or be outdated. It's essential to read the documentation carefully and ensure you understand the API before consuming from it.
+
+A few key things to look for in the documentation:
 
 - Does this API require an API key?
 - Does this API have a rate limit? If so, what is it?
 - Are there any other restrictions on using this API?
 
-API keys will require you to sign up for an account with the API provider before using the API. The rate limit is the number of requests you can make to the API in a given period. If you exceed the rate limit, you will get an error from the API. Other restrictions can include being unable to use the API for commercial purposes. All these are essential things to know before you start using the API.
+To use API keys, an API provider will require you to sign up for an account before assigning a key and allowing you to use the API. The rate limit is the number of requests you can make to the API in a given period. If you exceed the rate limit, you will get an error from the API. Other restrictions can include being unable to use the API for commercial purposes. All these are essential things to know before you start using the API.
 
 ## Review Questions
 
