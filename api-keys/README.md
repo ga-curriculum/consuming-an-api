@@ -29,7 +29,9 @@ Once you have created your account, your API key will be sent to the email you u
 
 ### Keep it secret, keep it safe
 
-We have collected our very first API key. Now what? We need to keep it secret. Luckily, the worst thing that can happen if someone gets a hold of our OMDB API key is they can run our over-rate limit or get our account banned. It's not good, but it's not the end of the world. However, we should still treat it as a password and keep it secret.
+We have collected our very first API key. ***Now what?***
+
+**We need to keep it secret.** Luckily, the worst things that can happen if someone gets a hold of our OMDb API key is they can make requests and exceed our over-rate limit or get our account banned. Not great, but neither are the end of the world. However, we should still treat it as a password and adhere to best practices and keep it secret.
 
 We should never commit our API keys to our repository when developing an application. Instead, we should store them in an environment variable and access them from there. This way, we can keep them secret without worrying about them being exposed in our code.
 
