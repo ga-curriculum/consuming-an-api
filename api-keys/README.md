@@ -4,9 +4,11 @@
 
 ## API Keys
 
-API keys are a way for API providers to control access to their API. They are unique identifiers that track and control how the API is used. API keys are usually a long string of random characters the API provider generates. They are typically passed as a query parameter in the URL when making a request to the API.
+**An API key is a unique identifier that API providers create to control access to their API and how it is used.**
 
-Since API keys are a unique identifier, they should be kept secret. If someone else gets a hold of your API key, they can use it to make requests to the API under your identity. If you are paying for the API, this can result in charges on your account that most companies will hold you responsible for. If you use an API key in your application, you should never commit it to your repository. Instead, you should store it in an environment variable and access it from there.
+They are usually a long string of random characters that the API provider generates. When making a request to the API, they are typically passed as a query parameter in the URL.
+
+Since API keys are a unique identifier, they should be kept secret. If someone else gets a hold of your API key, they can use it to make requests to the API under your identity. If you are paying for the API, this can result in charges on your account that most companies will hold you responsible for. If you use an API key in your application, you should never commit it to your repository. Instead, you should store it in an environment variable in a file that will be ignored when changes are pushed up to GitHub.
 
 ## Obtaining an API Key - OMDB API
 
