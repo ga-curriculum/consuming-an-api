@@ -78,20 +78,33 @@ curl "http://www.omdbapi.com/?apikey=$API_KEY&s=stargate" | json_pp
 
 > 📚 The `|` character is called a pipe. It takes the output from the command on the left and passes it as input to the command on the right. In this case, we are taking the output from the `curl` command and passing it as input to the `json_pp` command.
 
-Pretty!
+**Pretty!**
 
 ## Consume an API using Postman
 
-Now that we have requested the OMDB API using cURL let's request using Postman. Open up Postman and create a new request. In the URL bar, enter the following URL:
+Now that we have requested the OMDb API using cURL, let's make the same request using **Postman**. Open up Postman and create a new request. In the URL bar, enter the following URL:
 
-`"http://www.omdbapi.com/?apikey=$API_KEY&s=stargate"`
+```bash
+http://www.omdbapi.com/?apikey=$API_KEY&s=stargate
+```
 
-Once you have added the URL, you should see the Query Params section of the request update with the `spiky` and `s` query parameters. The `apikey` query parameter should have the value of your API key, and the `s` query parameter should have the value of `stargate`. If you don't see the query parameters, make sure you have the Params tab selected.
+> 📚 Note: for the URL to be entered in the bar in Postman, we DO NOT want the URL in quotes as we did for cURL.
+
+Once you have added the URL, you should see the Query Params section of the request update with the `apikey` and `s` query parameters. If you don't see the query parameters, make sure you have the Params tab selected. You should see the following:
 
 ![Postman Query Params](./assets/postman-query-params.png)
 
-You can select the value of the `apikey` query params and replace `$API_KEY` with your API key. Once you have done that, click the Send button. You should get back the same data we got back when we made the request using cURL. This time, the data is formatted for us and is much easier to read.
+The `apikey` query parameter should have the value of your API key, but it will currently be `$API_KEY` since that is what is currently in the query params or your URL. You can select the value of the `apikey` in the query params of **Postman** and replace `$API_KEY` with your ***actual*** API key.
+
+The `s` query parameter should already have the value of `stargate` since that too is in our original URL as a query parameter. 
+
+Once you have updated `apikey` and verified `s` is `stargate`, click the `Send` button. You should get back the same data we got back when we made the request using cURL. This time, the data will already be formatted for us and is much easier to read.
 
 ## You do: Consume an API using Postman
 
-Now that we have made a request to the OMDB API using both Postman and cURL, it's your time to venture forth and try this out yourself. Using the OMDB API documentation, make a request to the API using both Postman and cURL. Try making a request to the movie data URL and the poster images URL. Try searching for different movies and see what data you get back.
+Now that we have made a request to the OMDb API using both **Postman** and **cURL**, it's your turn to venture forth and try this out yourself.
+
+Using the OMDb API documentation, make a request to the API using both Postman and cURL.
+- Try making a request to the movie data URL.
+- Try making a request to the poster image URL.
+- Try searching for different movies and see what data you get back.
