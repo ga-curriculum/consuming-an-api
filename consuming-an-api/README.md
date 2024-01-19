@@ -38,11 +38,11 @@ echo $API_KEY
 
 > 📚 Even though this is a local environment, and we don't have to save our API key as an environment variable, we will do it anyway since it is following best practices. This is to get us in the habit of doing it when working with APIs in our applications.
 
-Once the environment variable is set, we can request the API. Let's look at the [documentation](https://www.omdbapi.com/#usage) again and see if we can find anything on the movie, **Stargate**.
+Once the environment variable is set, we can request the API. Let's look at the [documentation](https://www.omdbapi.com/#usage) again and see if we can find anything on **Stargate**.
 
 You'll notice there are two different URLs to which we can make requests. One is for ***all movie data*** (`http://www.omdbapi...`), and the other is for just ***poster images*** (`http.//img.omdbapi...`).
 
-Let's make a request to the movie **data** URL. That gives us the following base URL along with the API key query parameter:
+Let's make a request to the **movie data** URL. That gives us the following base URL along with the API key query parameter:
 
 ```bash
 http://www.omdbapi.com/?apikey=[yourkey]&
@@ -56,7 +56,7 @@ http://www.omdbapi.com/?apikey=$API_KEY&
 
 > ❗️ Notice the `$` again when using the variable `API_KEY`.
 
-We still need to specifically query for the movie, **Stargate**. Looking back at the [documentation for parameters](https://www.omdbapi.com/#parameters), we find that we can ***search*** for movies by ***title*** using the `s` query parameter. Let's add that to our URL with the title of our movie:
+We still need to specifically query for **Stargate**. Looking back at the [documentation for parameters](https://www.omdbapi.com/#parameters), we find that we can ***search*** for movies by ***title*** using the `s` query parameter. Let's add that to our URL with the title of our movie:
 
 ```bash
 http://www.omdbapi.com/?apikey=$API_KEY&s=stargate
