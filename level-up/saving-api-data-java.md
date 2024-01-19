@@ -14,19 +14,23 @@ Eventually, you will need more space on your database and that space comes at an
 
 ## Java Model for API Data
 
-Instead of saving the entire JSON object in a Schema, we can create a Schema that only has the properties we need. Looking at the [search endpoint](http://www.omdbapi.com/#parameters), we can see that we can search for movies in a couple of different ways:
+Instead of saving the entire JSON object in a Schema, we can create a Schema that only has the properties we need. Looking at the [search endpoint](http://www.omdbapi.com/#parameters), we see that we can search for movies in a number of different ways:
 
 - `i` - Search by movie ID
-- `t` - Search by movie title - Must be exact match `s` is used for partial matches
+- `t` - Search by movie title - Must be exact match (*`s` is used for partial matches*)
 - `type` - Search by movie type
 - `y` - Search by movie year
 - `r` - Search by movie rating
 
 > 📚 There are other ways to search for movies, but these are the ones we will use for this lesson.
 
-Since these are the search items we can use, these are the only properties we need to save to our database. All other items can be queried from the API when needed. But do we need all these properties? That is going to be up to you and the needs of your application. You could justifiably save all of them, but as a good rule of thumb, if you don't need it, don't save it.
+Since these are the search parameters we can use, these are the only properties we need to save to our database. All other items can be queried from the API when needed.
 
-We will only save the ID and title for this application, which is a simple user-based watch list. In the API's JSON response, the id is the `imdbID` property, and the title is the `Title` property. Let's create a Java Model that only has those two properties:
+But do we even need all these properties? Well, that is going to be up to you and the needs of your specific application. You could justifiably save all of them, but as a good rule of thumb, ***if you don't need it, don't save it***.
+
+We will only save the ID and title for this application, which is a simple user-based watch list. In the API's JSON response, the id is the `imdbID` property, and the title is the `Title` property.
+
+Let's create a Java Model that only has those two properties:
 
 ```java
 @Entity
