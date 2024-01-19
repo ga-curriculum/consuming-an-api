@@ -1,8 +1,16 @@
 # ![[Saving API data Java] - Level Up - Saving API data Java](./assets/tktk-hero.png)
 
-Often, we use a third-party API to get data for our application, and in that process, we would like to save some of that data to our database. Let's imagine we are building an application that allows users to search for movies and save them to a watch list. You've already chosen the [OMDB](http://www.omdbapi.com/) API to get movie data from. Upon using the built-in search functionality on the OMDB website, you notice that the JSON responses you are getting back from the API are **HUGE**! Looking deeper at what is included in that response, you see a lot of data you don't need for your application. 
+Often, we use a third-party API to get data for our application, and in that process, we would like to save some of that data to our database.
 
-So what do we do? We could save all of it, but think if this application takes off. At only 10 users, this application data will be small and manageable. But think of it at 100 and 1000; you will have a lot of data you don't need. Eventually, you will need more space on your database and will have to pay for more space. So what do we do? We only save the data we need.
+Let's imagine we are building an application that allows users to search for movies and save them to a watch list. You've already chosen the [OMDb](http://www.omdbapi.com/) API to request movie data.
+
+Upon using the built-in search functionality on the OMDb website, you notice that the JSON responses you are getting back from the API are **HUGE**! Looking deeper at what is included in that response, you see a lot of data you don't need for your application. 
+
+**So what do we do?**
+
+We could save all of it. At only 10 users, this application's data will be small and manageable. But think about if this application takes off! At 100 users, or even better, at 1000! You will have a lot of data you don't need.
+
+Eventually, you will need more space on your database and that space comes at an additional expense. So again, what do we do?
 
 ## Java Model for API Data
 
