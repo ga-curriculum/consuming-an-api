@@ -6,9 +6,9 @@
 
 For this lesson, we will use two tools to consume from the OMDB API.
 
-The first is [Postman](https://www.postman.com/). Postman is a tool that allows us to make requests to APIs and see the responses.
+The first is [cURL](https://curl.se/). cURL is a command line tool that will enable us to make requests to APIs from the command line.
 
-The second is [cURL](https://curl.se/). cURL is a command line tool that will enable us to make requests to APIs from the command line.
+The second is [Postman](https://www.postman.com/). Postman is a tool that allows us to make requests to APIs and see the responses.
 
 ## Consume an API using cURL
 
@@ -44,35 +44,41 @@ You'll notice there are two different URLs to which we can make requests. One is
 
 Let's make a request to the movie **data** URL. That gives us the following base URL along with the API key query parameter:
 
-`http://www.omdbapi.com/?apikey=[yourkey]&`
+```bash
+http://www.omdbapi.com/?apikey=[yourkey]&
+```
 
-We will need to replace the placeholder of `[yourkey]` with our API key (be sure to remove the square brackets too `[` `]`)
+We will need to replace the placeholder of `[yourkey]` with our API key (be sure to remove the square brackets too `[` `]`). That leaves us with this:
 
-That leaves us with this:
-
-`http://www.omdbapi.com/?apikey=$API_KEY&`
+```bash
+http://www.omdbapi.com/?apikey=$API_KEY&
+```
 
 > ❗️ Notice the `$` again when using the variable `API_KEY`.
 
-We still need to specifically query for the movie, **Stargate**. Looking back at the [documentation for parameters](https://www.omdbapi.com/#parameters), we find that we can **search** for movies by ***title*** using the `s` query parameter. Let's add that to our URL with the title of our movie:
+We still need to specifically query for the movie, **Stargate**. Looking back at the [documentation for parameters](https://www.omdbapi.com/#parameters), we find that we can ***search*** for movies by ***title*** using the `s` query parameter. Let's add that to our URL with the title of our movie:
 
-`http://www.omdbapi.com/?apikey=$API_KEY&s=stargate`
+```bash
+http://www.omdbapi.com/?apikey=$API_KEY&s=stargate
+```
 
 > 📚 You may have wondered why the `&` was included in the URL. The provider included that knowing that we will for sure be adding additional parameters to the query string to narrow our search.
 
-Perfect! Now we have a completed URL and can make a request. To make a **GET** request using **cURL**, we must pass the URL as an argument to the `curl` command. Let's run the following command:
+**Perfect!** Now we have a completed URL and can make a request. To make a **GET** request using **cURL**, we must pass the URL as an argument to the `curl` command and put our URL within `""`. Let's run the following command:
 
 ```bash
 curl "http://www.omdbapi.com/?apikey=$API_KEY&s=stargate"
 ```
 
-We should get back a bunch of data about Stargate. We can see that the data is in JSON format, and by default, it's all squished together and hard to read. Luckily, cURL has a built-in flag to format the JSON for us. Let's run the following command:
+We should get back a bunch of data about **Stargate**. We can see that the data is in **JSON format** by default, and it's all squished together and hard to read. Luckily, cURL has a **built-in flag** to format the JSON for us. Let's run the following command:
 
 ```bash
 curl "http://www.omdbapi.com/?apikey=$API_KEY&s=stargate" | json_pp
 ```
 
 > 📚 The `|` character is called a pipe. It takes the output from the command on the left and passes it as input to the command on the right. In this case, we are taking the output from the `curl` command and passing it as input to the `json_pp` command.
+
+Pretty!
 
 ## Consume an API using Postman
 
