@@ -1,4 +1,4 @@
-# ![[Saving API data Mongoose] - Level Up - Saving API data Mongoose](./assets/tktk-hero.png)
+# ![Consuming an API - Level Up - Saving API Data with Mongoose](./assets/saving-api-data-mongoose.png)
 
 Often, we use a third-party API to get data for our application, and in that process, we would like to save some of that data to our database.
 
