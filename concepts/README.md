@@ -1,4 +1,4 @@
-# ![Consuming an API - Concepts](./assets/tktk-hero.png)
+# ![Consuming an API - Concepts](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to decribe what an API is.
 
