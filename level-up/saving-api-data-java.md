@@ -1,4 +1,4 @@
-# ![[Saving API data Java] - Level Up - Saving API data Java](./assets/tktk-hero.png)
+# ![Consuming an API - Level Up - Saving API Data with Java](./assets/saving-api-data-java.png)
 
 Often, we use a third-party API to get data for our application, and in that process, we would like to save some of that data to our database.
 

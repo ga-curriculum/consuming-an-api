@@ -1,4 +1,4 @@
-# ![[Consuming an API]](./assets/tktk-hero.png)
+# ![Consuming an API](./assets/hero.png)
 
 ## About
 
@@ -14,16 +14,16 @@ In this module you'll learn how to consume from and API using Postman and cURL.
 | ------ |:----------:|:-----:| ------ |
 | [Concepts](./concepts/README.md) | -- | -- | Describe what an API is. |
 | [API Keys](./api-keys/README.md) | -- | -- | Create an API key and know how to handle it safely. |
-| [Consuming an API](./consuming-an-api/README.md) | -- | -- | Using Postman and cURL make a request to an API |
+| [Methods for Consuming an API](./methods-for-consuming-an-api/README.md) | -- | -- | Using Postman and cURL make a request to an API |
 | **Total content**                                        | -- | -- |                     |
 
 ## Level Up content
 
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
-| [Saving API Data - Mongoose Model](./level-up/saving-api-data-mongoose.md) | -- | -- | Describe what properties to save to a Mongoose Schema. |
-| [Saving API Data - Django Model](./level-up/saving-api-data-django.md) | -- | -- | Describe what properties to save to a Django Model. |
-| [Saving API Data - Java Model](./level-up/saving-api-data-java.md) | -- | -- | Describe what properties to save to a Java Model. |
+| [Saving API Data with Mongoose](./level-up/saving-api-data-mongoose.md) | -- | -- | Describe what properties to save to a Mongoose Schema. |
+| [Saving API Data with Django](./level-up/saving-api-data-django.md) | -- | -- | Describe what properties to save to a Django Model. |
+| [Saving API Data with Java](./level-up/saving-api-data-java.md) | -- | -- | Describe what properties to save to a Java Model. |
 | **Total Level Up content**                                          | -- | -- |                     |
 
 ## References

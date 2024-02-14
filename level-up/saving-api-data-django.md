@@ -1,4 +1,4 @@
-# ![[Saving API data Django] - Level Up - Saving API data Django](./assets/hero.png)
+# ![Consuming an API - Level Up - Saving API Data with Django](./assets/saving-api-data-django.png)
 
 Often, we use a third-party API to get data for our application, and in that process, we would like to save some of that data to our database.
 
