@@ -2,7 +2,7 @@
 
 ## About
 
-In this module you'll learn how to consume from and API using Postman and cURL.
+In this module, you'll explore making HTTP requests to APIs using industry-standard tools like Postman and cURL. You'll gain practical knowledge on handling API keys securely, and using environment variables. Whether you're a beginner or looking to expand your backend skill set, this lesson equips you with the knowledge to interact with APIs confidently and responsibly.
 
 ## Prerequisites
 
@@ -21,9 +21,9 @@ In this module you'll learn how to consume from and API using Postman and cURL.
 
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
-| [Saving API Data with Mongoose](./level-up/saving-api-data-mongoose.md) | -- | -- | Describe what properties to save to a Mongoose Schema. |
-| [Saving API Data with Django](./level-up/saving-api-data-django.md) | -- | -- | Describe what properties to save to a Django Model. |
-| [Saving API Data with Java](./level-up/saving-api-data-java.md) | -- | -- | Describe what properties to save to a Java Model. |
+| [Saving API Data with Mongoose](./saving-api-data-mongoose/README.md) | -- | -- | Describe what properties to save to a Mongoose Schema. |
+| [Saving API Data with Django](./saving-api-data-django/README.md) | -- | -- | Describe what properties to save to a Django Model. |
+| [Saving API Data with Java](./saving-api-data-java/README.md) | -- | -- | Describe what properties to save to a Java Model. |
 | **Total Level Up content**                                          | -- | -- |                     |
 
 ## References
@@ -34,7 +34,7 @@ In this module you'll learn how to consume from and API using Postman and cURL.
 
 ✏️ [Instructor Guide](./internal-resources/instructor-guide.md)
 
-🎥 [Video Hub](./internal-resources/video-guide.md)
+🎥 [Video Hub](./internal-resources/video-hub.md)
 
 🏗️ [Release Notes](./internal-resources/release-notes.md)
 

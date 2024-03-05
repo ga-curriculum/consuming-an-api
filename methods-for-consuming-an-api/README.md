@@ -4,19 +4,29 @@
 
 ## Consuming an API
 
-For this lesson, we will use two tools to consume from the OMDB API.
+Now that we've secured our API key, it's time to put it to use by testing the API. Before diving into the development of a full-fledged project, it's wise to ensure that the API offers the data and functionality we anticipate. Imagine the frustration of building an entire app only to find that the API doesn't work as expected! 
 
-The first is [cURL](https://curl.se/). cURL is a command line tool that will enable us to make requests to APIs from the command line.
+To efficiently test an API without setting up a complete project, we can turn to tools like Postman and cURL. 
 
-The second is [Postman](https://www.postman.com/). Postman is a tool that allows us to make requests to APIs and see the responses.
+- [cURL](https://curl.se/). cURL is a command line tool that enables us to make requests to APIs directly in the terminal.
+
+- [Postman](https://www.postman.com/). Postman is a tool that allows us to make requests to APIs from the app's interactive dashboard.
+
+These tools provide an ideal testing environment where we can explore the API's responses, utilize our key, and understand the data structure without any initial development. In the next section, we'll walk through how to test an API using both Postman and cURL, giving you two new methods to test future APIs. 
 
 ## Consume an API using cURL
 
-Looking at the [OMDb documentation for usage](https://www.omdbapi.com/#usage), we can see that the base URL for the API is `http://www.omdbapi.com/`. We can also see that the API requires an API key. As shown in the documentation, we can pass the API key as a query parameter in the URL, like so, `http://www.omdbapi.com/?apikey=[yourkey]&`.
+Looking at the [OMDb documentation for usage](https://www.omdbapi.com/#usage), we can see that the base URL for this API is `http://www.omdbapi.com/`. We can also see that the API requires an API key. As outlined in the documentation, we can pass the API key as a query parameter in the URL, like so, `http://www.omdbapi.com/?apikey=[yourkey]&`.
 
-Let's together build the command and make a request to the API using cURL.
+Let's build a commend together that makes a request using this URL. First, we have to save the API key as an environment variable. 
 
-First, we have to save the API key as an environment variable. In the terminal, run the following command:
+The terminal environment (often a command-line interface or shell in operating systems like UNIX, Linux, or macOS, and the Command Prompt or PowerShell in Windows) has the ability to save variables through the concept of environment variables. TO set a variable in your terminal just type it as you would in a .env file `MY_VAR=something_secret`.
+
+By default, environment variables are session-specific. They exist only as long as the terminal session is active.
+
+### Setting a variable
+
+In the terminal, run the following command:
 
 ```bash
 API_KEY=your_api_key
@@ -34,43 +44,59 @@ We can test that the environment variable was set correctly by running the follo
 echo $API_KEY
 ```
 
-> ❗️ To access the value stored in the variable, be sure to prepend the `$` to the variable. It's subtle, but it's there! You will also be doing the same in one of the steps below, so watch out for that too.
+> ❗️ To access the value stored in the variable, be sure to prepend a `$` to the variable name.
 
-> 📚 Even though this is a local environment, and we don't have to save our API key as an environment variable, we will do it anyway since it is following best practices. This is to get us in the habit of doing it when working with APIs in our applications.
+> Even though this is a local environment, and we don't have to save our API key as an environment variable, we will do it anyway since it is following best practices. This is to get us in the habit of doing it when working with APIs in our applications.
 
-Once the environment variable is set, we can request the API. Let's look at the [documentation](https://www.omdbapi.com/#usage) again and see if we can find anything on **Stargate**.
+Once the environment variable is set, we can make a request to the API using that variable. 
 
-You'll notice there are two different URLs to which we can make requests. One is for ***all movie data*** (`http://www.omdbapi...`), and the other is for just ***poster images*** (`http.//img.omdbapi...`).
 
-Let's make a request to the **movie data** URL. That gives us the following base URL along with the API key query parameter:
+### Making the request
+
+Let's review the [documentation](https://www.omdbapi.com/#usage) for instructions on how to make requests. You'll notice there are two different URLs to which we can make requests. 
+
+- One is for ***movie data***: `http://www.omdbapi.com/?apikey=[yourkey]&`
+- The other is for just ***movie poster images***: `http://img.omdbapi.com/?apikey=[yourkey]&`  *(requires a paid account)*
+
+Let's make a request to the **movie data** URL for the TV series **Stargate**.
+
+Start with the base URL:
 
 ```bash
 http://www.omdbapi.com/?apikey=[yourkey]&
 ```
 
-We will need to replace the placeholder of `[yourkey]` with our API key (be sure to remove the square brackets too `[` `]`). That leaves us with this:
+Then replace the placeholder of `[yourkey]` with your `API_Key` environment variable:
 
 ```bash
 http://www.omdbapi.com/?apikey=$API_KEY&
 ```
 
-> ❗️ Notice the `$` again when using the variable `API_KEY`.
+> ❗️ Notice the `$` when using the variable `API_KEY`.
 
-We still need to specifically query for **Stargate**. Looking back at the [documentation for parameters](https://www.omdbapi.com/#parameters), we find that we can ***search*** for movies by ***title*** using the `s` query parameter. Let's add that to our URL with the title of our movie:
+Now we need to specifically query for **Stargate**. Referencing the [documentation for parameters](https://www.omdbapi.com/#parameters), we find that we can search by ***title*** using the `s` query parameter. 
+
+Let's add that to the end of our base URL:
 
 ```bash
 http://www.omdbapi.com/?apikey=$API_KEY&s=stargate
 ```
 
-> 📚 You may have wondered why the `&` was included in the URL. The provider included that knowing that we will for sure be adding additional parameters to the query string to narrow our search.
+> 📚 You might be curious about why the API provider added an `&` symbol at the end of the base URL. This is typically done to make it easier for users to append additional parameters to the query string.
 
-**Perfect!** Now we have a completed URL and can make a request. To make a **GET** request using **cURL**, we must pass the URL as an argument to the `curl` command and put our URL within `""`. Let's run the following command:
+**Perfect!** Now we have a completed URL and can make a request. 
+
+To make a **GET** request using **cURL**, we must pass the URL as an argument to the `curl` command formatted like a string within `" "` quotes. 
+
+Let's run the following command:
 
 ```bash
 curl "http://www.omdbapi.com/?apikey=$API_KEY&s=stargate"
 ```
 
-We should get back a bunch of data about **Stargate**. We can see that the data is in **JSON format** by default, and it's all squished together and hard to read. Luckily, cURL has a **built-in flag** to format the JSON for us. Let's run the following command:
+This should return a condensed text object containing data on **Stargate**. If you examine closely, you'll see that the data is actually in **JSON format**, but it's not formatted for the shell environment and therefore very hard to read. Luckily, cURL has a **built-in flag** to format the JSON for us so that its more readable in the terminal. 
+
+Let's run the command again with a flag:
 
 ```bash
 curl "http://www.omdbapi.com/?apikey=$API_KEY&s=stargate" | json_pp
@@ -78,33 +104,38 @@ curl "http://www.omdbapi.com/?apikey=$API_KEY&s=stargate" | json_pp
 
 > 📚 The `|` character is called a pipe. It takes the output from the command on the left and passes it as input to the command on the right. In this case, we are taking the output from the `curl` command and passing it as input to the `json_pp` command.
 
-**Pretty!**
+**Much better!**
+
 
 ## Consume an API using Postman
 
-Now that we have requested the OMDb API using cURL, let's make the same request using **Postman**. Open up Postman and create a new request. In the URL bar, enter the following URL:
+Now that we have practiced making a request using cURL, let's make the same request using **Postman**. 
+
+Open up the Postman application and create a new request tab. In the URL bar, enter the same URL as before:
 
 ```bash
 http://www.omdbapi.com/?apikey=$API_KEY&s=stargate
 ```
 
-> 📚 Note: for the URL to be entered in the bar in Postman, we DO NOT want the URL in quotes as we did for cURL.
+> Note: The URL should not be formatted in quotes for Postman. 
 
-Once you have added the URL, you should see the Query Params section of the request update with the `apikey` and `s` query parameters. If you don't see the query parameters, make sure you have the Params tab selected. You should see the following:
+Once you have added the URL, you should see the Query Params section below the address bar automatically update with the `apikey` and `s` query parameters. If you don't see the query parameters, make sure you have the `Params` tab selected. 
+
+It should look like the following:
 
 ![Postman Query Params](./assets/postman-query-params.png)
 
-The `apikey` query parameter should have the value of your API key, but it will currently be `$API_KEY` since that is what is currently in the query params or your URL. You can select the value of the `apikey` in the query params of **Postman** and replace `$API_KEY` with your ***actual*** API key.
+Next we'll need to update the value of `API_KEY` in our URL since Postman does not have access to our environment variables in the terminal. Select the value for `apikey` in the query params section and replace `$API_KEY` with your ***actual*** API key. 
 
-The `s` query parameter should already have the value of `stargate` since that too is in our original URL as a query parameter. 
+The `s` query parameter should already have the value of `stargate` from our previous example.
 
-Once you have updated `apikey` and verified `s` is `stargate`, click the `Send` button. You should get back the same data we got back when we made the request using cURL. This time, the data will already be formatted for us and is much easier to read.
+Once you have updated `apikey`, click the `Send` button. You should get back the same data as before. This time, the data will already be formatted for us by Postman and is much easier to read.
 
-## You do: Consume an API using Postman
+## You do: Practice making requests
 
-Now that we have made a request to the OMDb API using both **Postman** and **cURL**, it's your turn to venture forth and try this out yourself.
+Now that we have made requests using both **Postman** and **cURL**, it's your turn. 
 
-Using the OMDb API documentation, make a request to the API using both Postman and cURL.
-- Try making a request to the movie data URL.
-- Try making a request to the poster image URL.
-- Try searching for different movies and see what data you get back.
+Using the OMDb API documentation, make another request to the API using both Postman and cURL.
+
+- Make a cURL request to the movie data URL with a different movie title. 
+- Make a postman request to the movie data URL with some extra parameters like: `http://www.omdbapi.com/?apikey=[yourkey]&t=Game of Thrones&Season=1&Episode=1` alter the parameters to see different data.
