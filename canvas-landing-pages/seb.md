@@ -22,4 +22,4 @@ In this module, you'll explore making HTTP requests to APIs using industry-stand
 
 ## References
 
-📖 [Reference Materials](./references/README.md)
+📖 [Reference Materials](../references/README.md)
