@@ -1,0 +1,46 @@
+import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/pkl/template.pkl" as Template
+
+// Add microlessons here, in the order they should be delivered
+
+concepts = new Template.Microlesson {
+  friendlyName = "Concepts"
+  dirName = "concepts"
+  type = "Content"
+  videoUrl = ""
+}
+
+apiKeys = new Template.Microlesson {
+  friendlyName = "API Keys"
+  dirName = "api-keys"
+  type = "Content"
+  videoUrl = ""
+}
+
+methodsForConsumingAnAPI = new Template.Microlesson {
+  friendlyName = "Methods for Consuming an API"
+  dirName = "methods-for-consuming-an-api"
+  type = "Content"
+  videoUrl = ""
+}
+
+savingAPIDataMongoose = new Template.Microlesson {
+  friendlyName = "Saving API Data Mongoose"
+  dirName = "saving-api-data-mongoose"
+  type = "Content"
+  videoUrl = ""
+}
+
+savingAPIDataDjango = new Template.Microlesson {
+  friendlyName = "Saving API Data Django"
+  dirName = "saving-api-data-django"
+  type = "Content"
+  videoUrl = ""
+}
+
+savingAPIDataJava = new Template.Microlesson {
+  friendlyName = "Saving API Data Java"
+  dirName = "saving-api-data-java"
+  type = "Content"
+  videoUrl = ""
+}
+

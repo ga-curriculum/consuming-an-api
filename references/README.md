@@ -1,4 +1,7 @@
-# ![Consuming an API - References](./assets/hero.png)
+<h1>
+  <span class="headline">Consuming an API</span>
+  <span class="subhead">References</span>
+</h1>
 
 ## Lesson references
 

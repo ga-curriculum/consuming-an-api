@@ -1,4 +1,7 @@
-# ![Consuming an API - Concepts](./assets/hero.png)
+<h1>
+  <span class="headline">Consuming an API</span>
+  <span class="subhead">Concepts</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will understand what it means to consume an API.
 

@@ -1,4 +1,7 @@
-# ![Consuming an API - API Keys](./assets/hero.png)
+<h1>
+  <span class="headline">Consuming an API</span>
+  <span class="subhead">API Keys</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to obtain and API key and understand how to store it safely.
 
@@ -27,7 +30,7 @@ Complete the following:
 
 > Note the information regarding current rate limits listed on this page.
 
-Once you have created your account, your API key will be sent to the email provided during sign up. ***Check your email for next steps in activating your key.***
+Once you have created your account, your API key will be sent to the email provided during sign up. **_Check your email for next steps in activating your key._**
 
 Activate your API key by following the instructions or link in the email. As noted before, always consult the API creator's documentation for the most up to date instructions on usage. With third Party API's, changes can happen at anytime, impacting our interactions and dependency on these external resources.
 

@@ -1,4 +1,7 @@
-# ![Consuming an API - Level Up - Saving API Data with Java](./assets/saving-api-data-java.png)
+<h1>
+  <span class="headline">Consuming an API</span>
+  <span class="subhead">Saving API Data Java</span>
+</h1>
 
 **Learning objective:** By the end of this lesson students will be able to discern when it is appropriate to save detailed data to a database versus making additional API requests for specific data.
 
