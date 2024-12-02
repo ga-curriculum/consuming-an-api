@@ -19,9 +19,9 @@ In this module, you'll explore making HTTP requests to APIs using industry-stand
 
 | Lesson                                                                 | Skills                                                 |
 | ---------------------------------------------------------------------- | ------------------------------------------------------ |
-| [Saving API Data with Mongoose](../saving-api-data-mongoose/README.md) | Describe what properties to save to a Mongoose Schema. |
-| [Saving API Data with Django](../saving-api-data-django/README.md)     | Describe what properties to save to a Django Model.    |
-| [Saving API Data with Java](../saving-api-data-java/README.md)         | Describe what properties to save to a Java Model.      |
+| [Saving API Data With Mongoose](../saving-api-data-with-mongoose/README.md) | Describe what properties to save to a Mongoose Schema. |
+| [Saving API Data With Django](../saving-api-data-with-django/README.md)     | Describe what properties to save to a Django Model.    |
+| [Saving API Data With Java](../saving-api-data-with-java/README.md)         | Describe what properties to save to a Java Model.      |
 
 ## References
 

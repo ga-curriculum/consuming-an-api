@@ -1,6 +1,6 @@
 <h1>
   <span class="headline">Consuming an API</span>
-  <span class="subhead">Saving API Data Django</span>
+  <span class="subhead">Saving API Data With Mongoose</span>
 </h1>
 
 **Learning objective:** By the end of this lesson students will be able to discern when it is appropriate to save detailed data to a database versus making additional API requests for specific data.
@@ -33,19 +33,24 @@ For our example, we would only need to save the ID and title for our application
 
 This gives us the information needed to design our database.
 
-## Django Model for API Data
+## Mongoose schema for API data
 
-Let's create a Django Model that only has those two properties:
+Let's create a Mongoose Schema that only has those two properties:
 
-```py
-class Movie(models.Model):
-    imdbID = models.CharField(max_length=255, unique=True)
-    title = models.CharField(max_length=255)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.title
+```js
+const movieSchema = new Schema(
+  {
+    imdbID: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+  },
+  { timestamps: true }
+);
 ```
 
 Saving more properties might add functionality to our application, like adding the rating or the year so users can filter their watch list by those properties. But for now, we will keep it simple and only save the id and the title.

@@ -24,22 +24,22 @@ methodsForConsumingAnAPI = new Template.Microlesson {
 }
 
 savingAPIDataMongoose = new Template.Microlesson {
-  friendlyName = "Saving API Data Mongoose"
-  dirName = "saving-api-data-mongoose"
+  friendlyName = "Saving API Data With Mongoose"
+  dirName = "saving-api-data-with-mongoose"
   type = "Content"
   videoUrl = ""
 }
 
 savingAPIDataDjango = new Template.Microlesson {
-  friendlyName = "Saving API Data Django"
-  dirName = "saving-api-data-django"
+  friendlyName = "Saving API Data With Django"
+  dirName = "saving-api-data-with-django"
   type = "Content"
   videoUrl = ""
 }
 
 savingAPIDataJava = new Template.Microlesson {
-  friendlyName = "Saving API Data Java"
-  dirName = "saving-api-data-java"
+  friendlyName = "Saving API Data With Java"
+  dirName = "saving-api-data-with-java"
   type = "Content"
   videoUrl = ""
 }

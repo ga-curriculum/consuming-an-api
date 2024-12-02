@@ -1,6 +1,6 @@
 <h1>
   <span class="headline">Consuming an API</span>
-  <span class="subhead">Saving API Data Java</span>
+  <span class="subhead">Saving API Data With Django</span>
 </h1>
 
 **Learning objective:** By the end of this lesson students will be able to discern when it is appropriate to save detailed data to a database versus making additional API requests for specific data.
@@ -33,35 +33,19 @@ For our example, we would only need to save the ID and title for our application
 
 This gives us the information needed to design our database.
 
-## Java Model for API Data
+## Django Model for API Data
 
-Let's create a Java Model that only has those two properties:
+Let's create a Django Model that only has those two properties:
 
-```java
-@Entity
-@Table(name = "movies")
-public class Movie {
+```py
+class Movie(models.Model):
+    imdbID = models.CharField(max_length=255, unique=True)
+    title = models.CharField(max_length=255)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String imdbID;
-    private String title;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
-
-    public Movie() {
-        // Default constructor
-    }
-
-    public Movie(String imdbID, String title) {
-        this.imdbID = imdbID;
-        this.title = title;
-    }
-
-    // Getters and setters...
-}
+    def __str__(self):
+        return self.title
 ```
 
 Saving more properties might add functionality to our application, like adding the rating or the year so users can filter their watch list by those properties. But for now, we will keep it simple and only save the id and the title.

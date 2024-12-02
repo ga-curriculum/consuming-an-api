@@ -1,6 +1,6 @@
 <h1>
   <span class="headline">Consuming an API</span>
-  <span class="subhead">Saving API Data Mongoose</span>
+  <span class="subhead">Saving API Data With Java</span>
 </h1>
 
 **Learning objective:** By the end of this lesson students will be able to discern when it is appropriate to save detailed data to a database versus making additional API requests for specific data.
@@ -33,24 +33,35 @@ For our example, we would only need to save the ID and title for our application
 
 This gives us the information needed to design our database.
 
-## Mongoose schema for API data
+## Java Model for API Data
 
-Let's create a Mongoose Schema that only has those two properties:
+Let's create a Java Model that only has those two properties:
 
-```js
-const movieSchema = new Schema(
-  {
-    imdbID: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-  },
-  { timestamps: true }
-);
+```java
+@Entity
+@Table(name = "movies")
+public class Movie {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String imdbID;
+    private String title;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+
+    public Movie() {
+        // Default constructor
+    }
+
+    public Movie(String imdbID, String title) {
+        this.imdbID = imdbID;
+        this.title = title;
+    }
+
+    // Getters and setters...
+}
 ```
 
 Saving more properties might add functionality to our application, like adding the rating or the year so users can filter their watch list by those properties. But for now, we will keep it simple and only save the id and the title.

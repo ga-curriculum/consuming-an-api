@@ -50,8 +50,8 @@
           "estimatedDeliveryTimeInMinutes": 0
         },
         {
-          "friendlyName": "Saving API Data Mongoose",
-          "dirName": "saving-api-data-mongoose",
+          "friendlyName": "Saving API Data With Mongoose",
+          "dirName": "saving-api-data-with-mongoose",
           "type": "Content",
           "skill": "",
           "learningObjective": "",
@@ -60,8 +60,8 @@
           "estimatedDeliveryTimeInMinutes": 0
         },
         {
-          "friendlyName": "Saving API Data Django",
-          "dirName": "saving-api-data-django",
+          "friendlyName": "Saving API Data With Django",
+          "dirName": "saving-api-data-with-django",
           "type": "Content",
           "skill": "",
           "learningObjective": "",
@@ -70,8 +70,8 @@
           "estimatedDeliveryTimeInMinutes": 0
         },
         {
-          "friendlyName": "Saving API Data Java",
-          "dirName": "saving-api-data-java",
+          "friendlyName": "Saving API Data With Java",
+          "dirName": "saving-api-data-with-java",
           "type": "Content",
           "skill": "",
           "learningObjective": "",
@@ -139,8 +139,8 @@
           "estimatedDeliveryTimeInMinutes": 0
         },
         {
-          "friendlyName": "Saving API Data Mongoose",
-          "dirName": "saving-api-data-mongoose",
+          "friendlyName": "Saving API Data With Mongoose",
+          "dirName": "saving-api-data-with-mongoose",
           "type": "Level Up content",
           "skill": "",
           "learningObjective": "",
@@ -149,8 +149,8 @@
           "estimatedDeliveryTimeInMinutes": 0
         },
         {
-          "friendlyName": "Saving API Data Django",
-          "dirName": "saving-api-data-django",
+          "friendlyName": "Saving API Data With Django",
+          "dirName": "saving-api-data-with-django",
           "type": "Level Up content",
           "skill": "",
           "learningObjective": "",
@@ -159,8 +159,8 @@
           "estimatedDeliveryTimeInMinutes": 0
         },
         {
-          "friendlyName": "Saving API Data Java",
-          "dirName": "saving-api-data-java",
+          "friendlyName": "Saving API Data With Java",
+          "dirName": "saving-api-data-with-java",
           "type": "Level Up content",
           "skill": "",
           "learningObjective": "",
